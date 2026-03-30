@@ -5,6 +5,7 @@ import Card from './components/Card/Card'
 import MainPart1 from './components/Main/MainPart1'
 import Navbar from './components/Navbar/Navbar'
 import PricingCard from './components/Transparent pricing card/PricingCard'
+import Workflow from './components/Workflow/Workflow'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
    <MainPart1></MainPart1>
    <Card></Card>
    <PricingCard></PricingCard>
+   <Workflow></Workflow>
     </>
   )
 }
