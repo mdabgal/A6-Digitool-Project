@@ -4,12 +4,12 @@ import { FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
     return (
-        <footer className="bg-[#0D111D] text-white py-16 px-6">
+        <footer className="bg-[#101727] text-white py-16 px-6">
       <div className="max-w-[1200px] mx-auto">
         {/* Top Footer Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8">
           
-          <div className="md:col-span-1">
+          <div className="md:col-span-1 ">
               <h2 className="text-2xl font-bold mb-4">DigiTools</h2>
       <p className="text-zinc-400 text-sm">
               Premium digital tools for creators, professionals, and businesses.
