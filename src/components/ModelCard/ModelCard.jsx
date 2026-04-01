@@ -28,7 +28,7 @@ const ModelCard = ({ model, addToCart }) => {
         <div className="bg-[#F2F2F2] p-3 rounded-full">
           <img 
             className="h-10 w-10" 
-            src={model.icon} 
+            src={model.icon}
             alt={model.name} 
           />
         </div>

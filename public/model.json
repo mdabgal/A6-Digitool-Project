@@ -12,7 +12,7 @@
       "50+ writing templates",
       "Grammar checker"
     ],
-   "icon":"/src/assets/writing_2327400 1.png"  
+   "icon":"/icons/writing_2327400 1.png"  
   },
   {
     "id": 2,
@@ -27,7 +27,7 @@
       "Monthly updates",
       "Commercial license"
     ],
-    "icon": "/src/assets/design-tool.png"
+    "icon": "/icons/design-tool.png"
   },
   {
     "id": 3,
@@ -42,7 +42,7 @@
       "Commercial use",
       "No attribution"
     ],
-    "icon": "/src/assets/camera.png"
+    "icon": "/icons/camera.png"
   },
   {
     "id": 4,
@@ -57,7 +57,7 @@
       "API access",
       "Custom workflows"
     ],
-    "icon": "/src/assets/operation.png"
+    "icon": "/icons/operation.png"
   },
   {
     "id": 5,
@@ -72,7 +72,7 @@
       "ATS optimization",
       "Export to PDF"
     ],
-    "icon": "/src/assets/portfolio.png"
+    "icon": "/icons/portfolio.png"
   },
   {
     "id": 6,
@@ -87,6 +87,6 @@
       "Scheduler included",
       "Analytics dashboard"
     ],
-    "icon": "/src/assets/social-media.png"
+    "icon": "/icons/social-media.png"
   }
 ]
