@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ModelCard from '../ModelCard/ModelCard';
+import { toast } from 'react-toastify';
 
 
 const Models = ({modelPromise, addToCart,  setView, cart, view }) => {
@@ -11,6 +12,7 @@ const Models = ({modelPromise, addToCart,  setView, cart, view }) => {
     modelPromise.then(data => {
       setModels(data);
       setLoading(false);
+      
   
   });
   }, [modelPromise]);

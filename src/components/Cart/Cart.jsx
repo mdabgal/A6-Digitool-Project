@@ -1,15 +1,17 @@
 import React from 'react'
+import { toast } from 'react-toastify'
 
 const Cart = ({ cart, setCart, setView, view }) => {
 
   const removeItem = (index) => {
     const newCart = cart.filter((_, i) => i !== index)
     setCart(newCart)
+    toast.info("Item removed")
   }
 
   const proceedToCheckout = () => {
     setCart([])
-    alert("Thank you for your purchase!")
+   toast.success("Thank you for your purchase")
   }
 
   const totalPrice = cart.reduce((sum, item) => sum + item.price, 0)
@@ -17,33 +19,23 @@ const Cart = ({ cart, setCart, setView, view }) => {
   return (
     <div className='mt-10 max-w-[600px] mx-auto p-4'>
 
- {/* <div className='flex justify-center gap-4 mb-6'>
-        <button 
-          onClick={() => setView("products")}
-          className="px-4 py-2 bg-gray-200 rounded-full"
-        >
-           Back to Products
-        </button>
-
-        <button className='px-4 py-2 bg-gray-200 rounded-full'>
-          Cart ({cart.length})
-        </button>
-      </div> */}
+ 
 
       <div className='flex justify-center gap-4 mb-6'>
-  {/* Products Tab */}
-  <button 
-    onClick={() => setView("products")}
-    className={`px-4 py-2 rounded-full font-bold transition ${
-      view === "products"
-        ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white"
-        : "bg-gray-200 text-gray-700"
-    }`}
-  >
-    Products
-  </button>
+ 
+<button
+  onClick={() => setView("products")}
+  className={`px-4 py-2 rounded-full font-bold transition ${
+    view === "products"
+      ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white"
+      : "bg-gray-200 text-gray-700"
+  }`}
+>
+  Products
+</button>
 
-  {/* Cart Tab */}
+
+  
   <button 
     onClick={() => setView("cart")}
     className={`px-4 py-2 rounded-full font-bold transition ${

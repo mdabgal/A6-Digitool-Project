@@ -11,6 +11,7 @@ import DigitalTools from './components/DigitalTools/DigitalTools'
 import Models from './components/Models/Models'
 import { useState } from 'react'
 import Cart from './components/Cart/Cart'
+import { toast } from 'react-toastify'
 
 const getModels = async () =>{
   const res = await fetch("/model.json")
@@ -25,7 +26,17 @@ function App() {
 
 
   const addToCart = (product) => {
-    setCart([...cart, product])
+
+ const exists = cart.find(item => item.id === product.id);
+
+  if(exists){
+    toast.error("Item already added!"); 
+    return false;
+  }
+
+    setCart([...cart, product]);
+      toast.success("Item added to cart!"); 
+  return true;
   }
 
 
@@ -37,6 +48,7 @@ function App() {
    {view === "products" ?(
     <>
     <Navbar cartCount={cart.length}></Navbar>
+
 <Bannar></Bannar>
    <MainPart1></MainPart1>
 
