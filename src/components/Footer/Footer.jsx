@@ -6,8 +6,8 @@ const Footer = () => {
     return (
         <footer className="bg-[#101727] text-white py-16 px-6">
       <div className="max-w-[1200px] mx-auto">
-        {/* Top Footer Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8">
+       
+        <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-5 gap-8 text-center">
           
           <div className="md:col-span-1 ">
               <h2 className="text-2xl font-bold mb-4">DigiTools</h2>

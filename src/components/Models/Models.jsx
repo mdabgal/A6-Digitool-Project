@@ -36,9 +36,6 @@ const Models = ({modelPromise, addToCart,  setView, cart, view }) => {
 
             {/* Toggle Button */}
           
-          {/* name of each tab group should be unique */}
-
-{/* tab */}
 <div className="flex justify-center my-8 gap-4">
   {/* Products Tab */}
   <label

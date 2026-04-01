@@ -17,7 +17,13 @@ const Cart = ({ cart, setCart, setView, view }) => {
   const totalPrice = cart.reduce((sum, item) => sum + item.price, 0)
 
   return (
-    <div className='mt-10 max-w-[600px] mx-auto p-4'>
+    <div className='mt-10 max-w-[1400px] mx-auto p-4 '>
+   
+            <div className='text-center space-y-2 mb-6'>
+                <h2 className='text-[48px] font-extrabold'>Premium Digital Tools</h2>
+                <p className='text-[16px] text-[#627387]'>Choose from our curated collection of premium digital products designed<br></br>
+                    to boost your productivity and creativity.</p>
+            </div>
 
  
 

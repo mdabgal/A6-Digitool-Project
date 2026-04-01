@@ -8,7 +8,7 @@ const PricingCard = () => {
                 <p className='text-[#627382] text-[16px]'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
             </div>
 
-            <div className='flex gap-10 justify-center items-center items-stretch '>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10  justify-items-center'>
                 <div className="card w-96 shadow-sm h-full min-h-[470px]  ">
   <div className="card-body flex flex-col justify-between rounded-2xl bg-[#F9FAFC]">
     
