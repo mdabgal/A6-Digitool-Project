@@ -9,26 +9,62 @@ import Workflow from './components/Workflow/Workflow'
 import Footer from './components/Footer/Footer'
 import DigitalTools from './components/DigitalTools/DigitalTools'
 import Models from './components/Models/Models'
+import { useState } from 'react'
+import Cart from './components/Cart/Cart'
 
 const getModels = async () =>{
-  const res = await fetch("/public/model.json")
+  const res = await fetch("/model.json")
   return res.json()
 }
 
 const modelPromise = getModels()
 function App() {
 
+  const[cart, setCart] = useState([]);
+  const[view, setView] = useState("products");
+
+
+  const addToCart = (product) => {
+    setCart([...cart, product])
+  }
+
 
   return (
     <>
-   <Navbar></Navbar>
-   <Bannar></Bannar>
+   
+   
+
+   {view === "products" ?(
+    <>
+    <Navbar cartCount={cart.length}></Navbar>
+<Bannar></Bannar>
    <MainPart1></MainPart1>
-   <Models modelPromise={modelPromise}></Models>
-   <Card></Card>
+
+   
+<Models 
+modelPromise={modelPromise}
+addToCart={addToCart}
+ setView={setView}
+  cart={cart}
+  view={view}
+></Models>
+
+<Card></Card>
    <PricingCard></PricingCard>
    <Workflow></Workflow>
    <Footer></Footer>
+</>
+   ) : (
+ <Cart 
+ cart={cart}
+  setCart={setCart}
+  setView={setView}
+  view={view}
+  ></Cart>
+   
+   )}
+
+   
     </>
   )
 }

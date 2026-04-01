@@ -15,6 +15,8 @@ const Card = () => {
                  
 
                  {/* card 1 */}
+
+                 
                     <div className="relative bg-white py-10 px-5 rounded-2xl shadow-md hover:shadow-xl transition text-center">
           <div className="absolute top-4 right-4 bg-purple-600 text-white text-xs px-3 py-2 rounded-full">
             01
@@ -32,7 +34,11 @@ const Card = () => {
                             Sign up for free in seconds. No credit card required to get started.
                         </p>
                    </div>
+
+
                  {/* card 2 */}
+
+
                     <div className="relative bg-white py-10 px-5 rounded-2xl shadow-md hover:shadow-xl transition text-center">
           <div className="absolute top-4 right-4 bg-purple-600 text-white text-xs px-3 py-2 rounded-full">
             02
@@ -51,7 +57,11 @@ const Card = () => {
                            that fit your needs.
                         </p>
                    </div>
+
+
                  {/* card 3 */}
+
+
                     <div className="relative bg-white py-10 px-5 rounded-2xl shadow-md hover:shadow-xl transition text-center">
           <div className="absolute top-4 right-4 bg-purple-600 text-white text-xs px-3 py-2 rounded-full">
             03
